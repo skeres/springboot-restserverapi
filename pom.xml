@@ -14,9 +14,18 @@
 	<packaging>war</packaging>
 	<name>springboot-restserverapi</name>
 	<description>Demo project for Spring Boot</description>
+
 	<properties>
 		<java.version>11</java.version>
+		<!-- La déclaration start-class ci dessous est optionnelle, car Spring Boot est capable de rechercher tout seul la
+		classe contenant la méthode main(String[] args).
+		 -->
+		<start-class>com.sks.springbootrestserverapi.SpringbootRestserverApplication</start-class>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
